@@ -1,3 +1,6 @@
+load('dataex2.Rdata')
+load('dataex4.Rdata')
+load('dataex5.Rdata')
 #Question 2b
 log_like_norm = function(dataex2,mu) {
   r = dataex2[,2]
