@@ -1,6 +1,7 @@
 load('dataex2.Rdata')
 load('dataex4.Rdata')
 load('dataex5.Rdata')
+install.packages("ggplot2")
 #Question 2b
 log_like_norm = function(dataex2,mu) {
   r = dataex2[,2]
@@ -76,6 +77,6 @@ ggplot(
     x = dataex5,
   )
 ) + 
-  geom_histogram(aes(y = stat(density)),bins = 100) +
+  geom_histogram(aes(y = stat(density)),bins = 500) +
   geom_function(fun = f_mixture) + 
   labs(title = "Histogram of the data and the estimated density")
