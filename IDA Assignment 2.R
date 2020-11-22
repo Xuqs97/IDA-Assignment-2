@@ -77,6 +77,6 @@ ggplot(
     x = dataex5,
   )
 ) + 
-  geom_histogram(aes(y = stat(density)),bins = 500) +
+  geom_histogram(aes(y = stat(density)),bins = 200) +
   geom_function(fun = f_mixture) + 
   labs(title = "Histogram of the data and the estimated density")
